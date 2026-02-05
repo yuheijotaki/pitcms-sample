@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "collections": [
+    {
+      "name": "posts",
+      "label": "投稿",
+      "path": "content/posts",
+      "extension": "md",
+      "fields": [
+        {
+          "type": "text",
+          "name": "title",
+          "label": "タイトル",
+          "required": true
+        },
+        {
+          "type": "textarea",
+          "name": "content",
+          "label": "本文"
+        }
+      ],
+      "pit": {
+        "title": "title",
+        "body": "content"
+      }
+    }
+  ]
+}
