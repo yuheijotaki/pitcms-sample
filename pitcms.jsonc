@@ -14,6 +14,12 @@
           "required": true
         },
         {
+          "name": "publishedAt",
+          "type": "date",
+          "label": "公開日時",
+          "includeTime": true
+        },
+        {
           "type": "textarea",
           "name": "content",
           "label": "本文"
