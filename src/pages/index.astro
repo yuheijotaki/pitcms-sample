@@ -2,15 +2,15 @@
 import { getCollection } from "astro:content";
 
 const posts = await getCollection("posts");
+
+posts.sort(
+  (a, b) => b.data.publishedAt.getTime() - a.data.publishedAt.getTime(),
+);
 ---
 
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
     <title>投稿一覧</title>
   </head>
   <body>
