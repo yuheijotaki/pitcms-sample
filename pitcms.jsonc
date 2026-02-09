@@ -27,6 +27,7 @@
       ],
       "pit": {
         "title": "title",
+        "publishedAt": "publishedAt",
         "body": "content"
       }
     }
